@@ -32,12 +32,28 @@ void figura14(int xc, int yc, int size) {
     line(x1 + 6*size, y1 + 3*size, x1 + 8*size, yc);
 }
 
+void figura15(int xc, int yc, int size) {
+    int x1 = xc - 3*size, y1 = yc - size;
+    line(x1, y1, x1 + 6*size, y1);
+    line(x1, y1 + 2*size, x1 + 6*size, y1 + 2*size);
+
+    line(x1, y1, x1 + size, yc);
+    line(x1, y1 + 2*size, x1 + size, yc);
+
+    line(x1 + 6*size, y1, x1 + 6*size, y1 - size);
+    line(x1 + 6*size, y1 + 2*size, x1 + 6*size, y1 + 3*size);
+
+    line(x1 + 6*size, y1 - size, x1 + 8*size, yc);
+    line(x1 + 6*size, y1 + 3*size, x1 + 8*size, yc);
+}
+
 int main(int argc, char *argv[]) {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, NULL);
 
     figura13(20, 20, 20);
     figura14(80, 120, 10);
+    figura15(80, 170, 10);
 
     getch();
     closegraph();
