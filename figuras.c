@@ -253,6 +253,149 @@ void figura18(int x1, int y1, int x2, int y2) {
     line(x2, y2, x2 - 8, y2 + 9);
 }
 
+void figura19(int xc, int yc, int size) {
+    int x1 = xc - size, y1 = yc - size;
+    line(x1, y1, x1, y1 - 3*size);
+    line(x1, y1 - 3*size, x1 - size, y1 - 3*size);
+    line(x1 - size, y1 - 3*size, xc, y1 - 5*size);
+    line(xc, y1 - 5*size, xc + 2*size, y1 - 3*size);
+    line(xc + 2*size, y1 - 3*size, xc + size, y1 - 3*size);
+    line(xc + size, y1 - 3*size, xc + size, y1);
+
+    x1 = xc + size;
+    line(x1, y1, x1 + 2*size, y1);
+    line(x1 + 2*size, y1, x1 + 2*size, y1 - size);
+    line(x1 + 2*size, y1 - size, x1 + 4*size, yc);
+    line(x1 + 4*size, yc, x1 + 2*size, yc + 2*size);
+    line(x1 + 2*size, yc + 2*size, x1 + 2*size, yc + size);
+    line(x1 + 2*size, yc + size, xc - 3*size, yc + size);
+    x1 = xc - 3*size;
+    y1 = yc + size;
+    line(x1, y1, x1, y1 + size);
+    line(x1, y1 + size, x1 - 2*size, yc);
+    line(x1 - 2*size, yc, x1, yc - 2*size);
+    line(x1, yc - 2*size, x1, yc - size);
+    line(x1, yc - size, x1 + 2*size, yc - size);
+}
+
+void figura20(int xc, int yc, int size) {
+    int x1 = xc - size, y1 = yc - size;
+    line(x1, y1, x1, y1 - 3*size);
+    line(x1, y1 - 3*size, x1 - size, y1 - 3*size);
+    line(x1 - size, y1 - 3*size, xc, y1 - 5*size);
+    line(xc, y1 - 5*size, xc + 2*size, y1 - 3*size);
+    line(xc + 2*size, y1 - 3*size, xc + size, y1 - 3*size);
+    line(xc + size, y1 - 3*size, xc + size, y1);
+
+    x1 = xc + size;
+    line(x1, y1, x1 + 2*size, y1);
+    line(x1 + 2*size, y1, x1 + 2*size, y1 - size);
+    line(x1 + 2*size, y1 - size, x1 + 4*size, yc);
+    line(x1 + 4*size, yc, x1 + 2*size, yc + 2*size);
+    line(x1 + 2*size, yc + 2*size, x1 + 2*size, yc + size);
+    line(x1 + 2*size, yc + size, x1, yc + size);
+
+    y1 = yc + size;
+    line(x1, y1, x1, y1 + 3*size);
+    line(x1, y1 + 3*size, x1 + size, y1 + 3*size);
+    line(x1 + size, y1 + 3*size, xc, y1 + 5*size);
+    line(xc, y1 + 5*size, xc - 2*size, y1 + 3*size);
+    line(xc - 2*size, y1 + 3*size, xc - size, y1 + 3*size);
+    line(xc - size, y1 + 3*size, xc - size, y1);
+    line(xc - size, y1, xc - 3*size, y1);
+
+    x1 = xc - 3*size;
+    y1 = yc + size;
+    line(x1, y1, x1, y1 + size);
+    line(x1, y1 + size, x1 - 2*size, yc);
+    line(x1 - 2*size, yc, x1, yc - 2*size);
+    line(x1, yc - 2*size, x1, yc - size);
+    line(x1, yc - size, x1 + 2*size, yc - size);
+}
+
+void figura21(int xc, int yc, int size) {
+    int x1 = xc - 4*size, y1 = yc - 3*size;
+    line(x1, y1, x1 + 8*size, y1);
+    line(x1, y1, x1, y1 + 6*size);
+    line(x1, y1 + 6*size, x1 + 8*size, y1 + 6*size);
+    x1 += 8*size;
+    line(x1, y1, x1, y1 + 2*size);
+    line(x1, y1 + 2*size, x1 + 2*size, y1 + 2*size);
+    line(x1 + 2*size, y1 + 2*size, x1 + 2*size, y1 + size);
+    line(x1 + 2*size, y1 + size, x1 + 4*size, yc);
+    line(x1 + 4*size, yc, x1 + 2*size, yc + 2*size);
+    line(x1 + 2*size, yc + 2*size, x1 + 2*size, yc + size);
+    line(x1 + 2*size, yc + size, x1, yc + size);
+    line(x1, yc + size, x1, yc + 3*size);
+}
+
+void figura22(int xc, int yc, int size) {
+    int x1 = xc - 4*size, y1 = yc - 3*size;
+    line(x1, y1, x1 + 8*size, y1);
+    line(x1, y1 + 6*size, x1 + 8*size, y1 + 6*size);
+    x1 += 8*size;
+    line(x1, y1, x1, y1 + 2*size);
+    line(x1, y1 + 2*size, x1 + 2*size, y1 + 2*size);
+    line(x1 + 2*size, y1 + 2*size, x1 + 2*size, y1 + size);
+    line(x1 + 2*size, y1 + size, x1 + 4*size, yc);
+    line(x1 + 4*size, yc, x1 + 2*size, yc + 2*size);
+    line(x1 + 2*size, yc + 2*size, x1 + 2*size, yc + size);
+    line(x1 + 2*size, yc + size, x1, yc + size);
+    line(x1, yc + size, x1, yc + 3*size);
+    x1 = xc - 4*size;
+    y1 = yc - 3*size;
+    line(x1, y1, x1, y1 + 2*size);
+    line(x1, y1 + 2*size, x1 - 2*size, y1 + 2*size);
+    line(x1 - 2*size, y1 + 2*size, x1 - 2*size, y1 + size);
+    line(x1 - 2*size, y1 + size, x1 - 4*size, yc);
+    line(x1 - 4*size, yc, x1 - 2*size, yc + 2*size);
+    line(x1 - 2*size, yc + 2*size, x1 - 2*size, yc + size);
+    line(x1 - 2*size, yc + size, x1, yc + size);
+    line(x1, yc + size, x1, yc + 3*size);
+}
+
+void figura23(int xc, int yc, int size) {
+    int x1 = xc - 4*size, y1 = yc - 4*size;
+    line(x1, y1, x1 + 3*size, y1);
+    line(x1 + 3*size, y1, x1 + 3*size, y1 - 2*size);
+    line(x1 + 3*size, y1 - 2*size, x1 + 2*size, y1 - 2*size);
+    line(x1 + 2*size, y1 - 2*size, xc, y1 - 4*size);
+    line(xc, y1 - 4*size, xc + 2*size, y1 - 2*size);
+    line(xc + 2*size, y1 - 2*size, xc + size, y1 - 2*size);
+    line(xc + size, y1 - 2*size, xc + size, y1);
+    line(xc + size, y1, xc + 4*size, y1);
+
+    x1 = xc + 4*size;
+    line(x1, y1, x1, y1 + 3*size);
+    line(x1, y1 + 3*size, x1 + 2*size, y1 + 3*size);
+    line(x1 + 2*size, y1 + 3*size, x1 + 2*size, y1 + 2*size);
+    line(x1 + 2*size, y1 + 2*size, x1 + 4*size, y1 + 4*size);
+    line(x1 + 4*size, y1 + 4*size, x1 + 2*size, y1 + 6*size);
+    line(x1 + 2*size, y1 + 6*size, x1 + 2*size, y1 + 5*size);
+    line(x1 + 2*size, y1 + 5*size, x1, y1 + 5*size);
+    line(x1, y1 + 5*size, x1, y1 + 8*size);
+
+    y1 += 8*size;
+    line(x1, y1, x1 - 3*size, y1);
+    line(x1 - 3*size, y1, x1 - 3*size, y1 + 2*size);
+    line(x1 - 3*size, y1 + 2*size, x1 - 2*size, y1 + 2*size);
+    line(x1 - 2*size, y1 + 2*size, xc, y1 + 4*size);
+    line(xc, y1 + 4*size, xc - 2*size, y1 + 2*size);
+    line(xc - 2*size, y1 + 2*size, xc - size, y1 + 2*size);
+    line(xc - size, y1 + 2*size, xc - size, y1);
+    line(xc - size, y1, xc - 4*size, y1);
+
+    x1 = xc - 4*size;
+    line(x1, y1, x1, y1 - 3*size);
+    line(x1, y1 - 3*size, x1 - 2*size, y1 - 3*size);
+    line(x1 - 2*size, y1 - 3*size, x1 - 2*size, y1 - 2*size);
+    line(x1 - 2*size, y1 - 2*size, x1 - 4*size, yc);
+    line(x1 - 4*size, yc, x1 - 2*size, yc - 2*size);
+    line(x1 - 2*size, yc - 2*size, x1 - 2*size, yc - size);
+    line(x1 - 2*size, yc - size, x1, yc - size);
+    line(x1, yc - size, x1, yc - 4*size);
+}
+
 int main(int argc, char *argv[]) {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, NULL);
@@ -278,7 +421,11 @@ int main(int argc, char *argv[]) {
     figura17(470, 290, 10);
     figura18(500, 300, 560, 280);
 
-    
+    figura19(70, 400, 10);
+    figura20(170, 400, 8);
+    figura21(260, 400, 8);
+    figura22(400, 400, 8);
+    figura23(540, 400, 8);
 
     getch();
     closegraph();
